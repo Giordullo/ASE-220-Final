@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="../stylesheet.css">
+
+		<!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		
+		<script src="../js/Account.js"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		
+
+        <title>PodScholar</title>
+    </head>
+	
+	<!-- Header -->
+	<header>
+
+		<h2 class="header-title">PodScholar</h2>
+
+	</header>
+
+	<!-- Body -->
+    <body class="bg">
+
+				<!-- Navbar -->
+				<div class="d-grid gap-2 d-md-flex justify-content-md-end" id="header-nav-dropdown">
+
+					<!-- Nav Buttons -->
+					<button class="btn btn-dark" type="button" onclick="location.href='/'; setGSearch('');">Home</button>
+					<button class="btn btn-dark" type="button" onclick="location.href='about'; setGSearch('');">About</button>
+					<button class="btn btn-dark" type="button" onclick="location.href='/categories'; setGSearch('');">Categories</button>
+					<button class="btn btn-dark" type="button" onclick="location.href='/keywords'; setGSearch('');">Tags</button>
+		
+					<!-- Username & Dashboard dropbox -->
+					<button class="btn btn-dark" type="button" id="LogInButton" onclick="location.href='/auth'; setGSearch('');">Login</button>
+		
+					<button class="btn btn-dark dropdown-toggle" type="button" id="UsernameButton" data-bs-toggle="dropdown" aria-expanded="false"></button>
+					<ul class="dropdown-menu dropdown-menu-dark">
+					  <li><a class="dropdown-item active" onclick="location.href='/'; setGSearch('');">Home</a></li>
+					  <li><a class="dropdown-item" onclick="location.href='/upload'; setGSearch('');">Upload</a></li>
+					  <li><a class="dropdown-item" onclick="location.href='/account/details'; setGSearch('');">Account</a></li>
+					  <li><a class="dropdown-item" onclick="LogInButtonPress(); setGSearch('');">Sign Out</a></li>
+					</ul>
+		
+					<script>ShowLogInButton();</script>
+		
+				</div>
+
+		<!-- About -->
+		<div class="card bg-dark mb-3 text-white" id="newest-main-container">
+				<div class="card-header">Terms and Conditions</div>
+
+				<div class="card-body">
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor orci eu. Etiam tempor orci eu lobortis elementum. Tincidunt ornare massa eget egestas purus. Orci a scelerisque purus semper eget. Ut ornare lectus sit amet est placerat in egestas. Amet volutpat consequat mauris nunc congue nisi. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Varius morbi enim nunc faucibus a pellentesque sit amet. Cursus turpis massa tincidunt dui ut ornare lectus. Dignissim enim sit amet venenatis urna cursus eget. Pellentesque elit eget gravida cum sociis natoque. Curabitur vitae nunc sed velit.
+
+						Et netus et malesuada fames ac turpis. Sit amet venenatis urna cursus eget nunc. Justo laoreet sit amet cursus sit amet dictum. Diam quam nulla porttitor massa id neque aliquam vestibulum. Viverra justo nec ultrices dui sapien. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Rutrum tellus pellentesque eu tincidunt tortor. Ante in nibh mauris cursus mattis molestie a iaculis. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Diam sollicitudin tempor id eu nisl. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Vel pretium lectus quam id. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Venenatis a condimentum vitae sapien pellentesque habitant. Eu turpis egestas pretium aenean pharetra magna ac placerat. Enim neque volutpat ac tincidunt vitae semper quis. Sit amet mattis vulputate enim nulla.
+						
+						Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Id aliquet risus feugiat in ante metus dictum at. Sollicitudin tempor id eu nisl. Magna etiam tempor orci eu lobortis elementum nibh tellus. Risus at ultrices mi tempus imperdiet nulla malesuada. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Eu feugiat pretium nibh ipsum consequat nisl. Tristique senectus et netus et malesuada fames. Ut ornare lectus sit amet est placerat in. Molestie ac feugiat sed lectus vestibulum. Sed adipiscing diam donec adipiscing tristique risus nec.
+						
+						Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Urna molestie at elementum eu facilisis sed odio morbi quis. Orci eu lobortis elementum nibh tellus. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Adipiscing elit duis tristique sollicitudin. Luctus accumsan tortor posuere ac ut. In hac habitasse platea dictumst quisque sagittis purus sit. Ac odio tempor orci dapibus. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Varius quam quisque id diam vel. Tortor posuere ac ut consequat semper viverra nam libero justo. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Vitae elementum curabitur vitae nunc sed velit dignissim sodales ut. Cursus euismod quis viverra nibh cras. Nisl nunc mi ipsum faucibus vitae aliquet. Faucibus scelerisque eleifend donec pretium. Lectus quam id leo in vitae. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Volutpat sed cras ornare arcu dui.
+						
+						Risus viverra adipiscing at in. Risus at ultrices mi tempus imperdiet nulla malesuada. Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Lacinia at quis risus sed vulputate. Tristique senectus et netus et malesuada fames ac. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet cursus sit amet dictum sit amet justo donec. Porttitor leo a diam sollicitudin tempor id eu. Cursus turpis massa tincidunt dui ut ornare. Phasellus egestas tellus rutrum tellus. Non sodales neque sodales ut etiam sit. Lacus suspendisse faucibus interdum posuere lorem ipsum.
+						
+						Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Sollicitudin tempor id eu nisl nunc mi. Vel eros donec ac odio tempor orci dapibus. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Lacus sed turpis tincidunt id aliquet risus feugiat in. Fusce id velit ut tortor pretium viverra suspendisse. Nunc congue nisi vitae suscipit. Scelerisque mauris pellentesque pulvinar pellentesque. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Praesent tristique magna sit amet purus gravida quis.
+						
+						Id cursus metus aliquam eleifend mi in nulla. Lacus laoreet non curabitur gravida. Malesuada bibendum arcu vitae elementum. Quisque egestas diam in arcu cursus euismod. Duis tristique sollicitudin nibh sit amet commodo. Leo duis ut diam quam nulla porttitor. Venenatis lectus magna fringilla urna porttitor. Diam vel quam elementum pulvinar etiam non quam lacus. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Placerat in egestas erat imperdiet sed. Rhoncus mattis rhoncus urna neque viverra. Urna et pharetra pharetra massa massa ultricies mi quis. Montes nascetur ridiculus mus mauris vitae. Viverra accumsan in nisl nisi scelerisque eu. Ultrices mi tempus imperdiet nulla malesuada. Id leo in vitae turpis massa.
+						
+						Sollicitudin nibh sit amet commodo nulla. Suspendisse in est ante in nibh mauris cursus. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Eget arcu dictum varius duis at consectetur. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Amet consectetur adipiscing elit duis tristique sollicitudin. Ac auctor augue mauris augue neque gravida in. Elit eget gravida cum sociis natoque penatibus et magnis. Magna fermentum iaculis eu non. Magna ac placerat vestibulum lectus. Aliquam malesuada bibendum arcu vitae.
+						
+						Ac odio tempor orci dapibus ultrices in. Ut sem viverra aliquet eget sit. Volutpat blandit aliquam etiam erat. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Egestas sed sed risus pretium quam vulputate. Augue interdum velit euismod in. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Senectus et netus et malesuada fames ac turpis egestas sed. Egestas purus viverra accumsan in. Elementum nibh tellus molestie nunc non blandit massa enim. Ut venenatis tellus in metus vulputate eu scelerisque felis. Mi tempus imperdiet nulla malesuada pellentesque. Orci eu lobortis elementum nibh tellus. Sit amet commodo nulla facilisi nullam. Sem fringilla ut morbi tincidunt augue interdum. Ac tortor vitae purus faucibus. Netus et malesuada fames ac turpis egestas. Gravida neque convallis a cras semper auctor.
+						
+						Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. In pellentesque massa placerat duis. Nullam ac tortor vitae purus faucibus. Semper eget duis at tellus at urna. Aliquet eget sit amet tellus cras adipiscing enim eu turpis. Amet tellus cras adipiscing enim eu. Elit ut aliquam purus sit amet luctus venenatis lectus. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Nulla at volutpat diam ut venenatis. Orci ac auctor augue mauris augue neque gravida in.
+					</p>
+				</div>
+	
+
+		</div>
+
+</body>
+
+<footer>
+	<nav class="navbar bg-dark mb-3 text-white">
+		<form class="form-inline">
+
+			<div class="row">
+				<div class="col form-group">
+					<button class="btn btn-lg btn-dark btn-block" type="button" onclick="location.href='about'; setGSearch('');">ABOUT</button>
+				</div>
+				<div class="col form-group">
+					<button class="btn btn-lg btn-dark btn-block" type="button" onclick="location.href='faq'; setGSearch('');">FAQ</button>
+				</div>
+				<div class="col form-group">
+					<button class="btn btn-lg btn-dark btn-block" type="button" onclick="location.href='terms'; setGSearch('');">TERMS</button>
+				</div>
+				<div class="col form-group">
+					<button class="btn btn-lg btn-dark btn-block" type="button" onclick="location.href='contact'; setGSearch('');">CONTACT</button>
+				</div>
+				<div class="col form-group">
+					<button class="btn btn-lg btn-dark btn-block" type="button" onclick="location.href='pricing'; setGSearch('');">PRICING</button>
+				</div>
+			</div>
+
+			<small>    &copy; Copyright 2022, Podscholar</small> 
+		</form>
+	  </nav>
+</footer>
+
+</html>

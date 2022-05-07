@@ -1,0 +1,99 @@
+// HOME //
+GET http://localhost:8080/api/
+
+GET http://localhost:8080/api/search/keyword/Test
+
+GET http://localhost:8080/api/search/date/2022
+
+// CATEGORIES //
+
+GET http://localhost:8080/api/categories
+
+GET http://localhost:8080/api/categories/Computer%20Science
+
+GET http://localhost:8080/api/categories/Computer%20Science/search/keyword/Test
+
+GET http://localhost:8080/api/categories/Computer%20Science/search/date/2022
+
+// KEYWORDS //
+
+GET http://localhost:8080/api/keywords
+
+GET http://localhost:8080/api/keywords/Test
+
+GET http://localhost:8080/api/keywords/Test/search/date/2022
+
+// PODCAST //
+
+POST http://localhost:8080/api/podcasts HTTP/1.1
+content-type: application/json
+
+{
+    "first": "Hunter",
+    "last": "Giordullo",
+    "email": "giordulloh1@mymail.nku.edu",
+    "title": "Test Again",
+    "desc": "Test Again...",
+    "journal": "Test Again",
+    "day": "06",
+    "month": "05",
+    "year": 2022,
+    "doi": "5234523452",
+    "keywords": "Test",
+    "disc": "Computer Science",
+    "tags": "Tag1,Test",
+    "url": "https://google.com/"
+}
+
+GET http://localhost:8080/api/podcasts/Test%20Again
+
+PATCH http://localhost:8080/api/podcasts/Test%20Again HTTP/1.1
+content-type: application/json
+
+{
+    "journal": "This Was Changed!!!"
+}
+
+DELETE http://localhost:8080/api/podcasts/Test%20Again
+
+PATCH http://localhost:8080/api/podcasts/Test/actions/subscribe  HTTP/1.1
+content-type: application/json
+
+{
+    "email": "giordulloh1@mymail.nku.edu"
+}
+
+PATCH http://localhost:8080/api/podcasts/Test/actions/like  HTTP/1.1
+content-type: application/json
+
+{
+    "rating": 4
+}
+
+// AUTH //
+POST http://localhost:8080/api/auth/signin  HTTP/1.1
+content-type: application/json
+
+{
+    "email": "giordulloh1@mymail.nku.edu",
+    "pass": "1234"
+}
+
+POST http://localhost:8080/api/auth/signup  HTTP/1.1
+content-type: application/json
+
+{
+    "email": "YetAnotherTestAccount@gmail.com",
+    "pass": "1234"
+}
+
+// USER ACCOUNT //
+GET http://localhost:8080/api/account/giordulloh1@mymail.nku.edu
+
+PATCH http://localhost:8080/api/account  HTTP/1.1
+content-type: application/json
+
+{
+    "email": "giordulloh1@mymail.nku.edu",
+    "first": "Test"
+}
